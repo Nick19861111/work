@@ -15,3 +15,29 @@
 
 ## 工作开始
 
+首先我的测试环境是两个系统一个是windows10和macbookpor
+
+构建cocos的环境我都在windows10下面进行的所以没有用shell语言而是用的bat进行，但是原理是一样
+
+我的版本
+
+- cocos creator 2.4.4版本
+- 安卓的sdk 30.0.3
+- ndk 22
+- xcode 是14.01版本
+- mac 操作系统是vertuara 13.0
+- 一个安装ipa的软件 爱思助手
+
+吐槽一下网上很多的人每次都是截图，写顺序和命令从来不写版本，造成就算我们用的是同样的顺序和步骤但是也不能得到我们想要的结果，在protobufjs的打包上深有体会，希望这次整理对一些朋友可以节省时间。
+
+cocos creator 安卓构建
+
+- 首先要有ndk，和sdk的配置，这个网站上一搜一大把
+- 自动化的命令 我参考的是 2.4的版本 地址在 https://docs.cocos.com/creator/2.4/manual/zh/publish/publish-in-command-line.html
+	- 参数说明 CocosCreator/CocosCreator.exe 这个地方就是一个你在windows上ccc的安装的地址
+	- 这里要注意的是：1.--build "platform=android;debug=true" 这里的debug=false我测试的时候会编译卡顿，或者说非常慢，造成我以为时候挂了。
+	- 注意2：就是ccc没有压缩图片的工具，建议就是在构建的时候对图片进行一个压缩处理。可以参考我的第一篇文章：https://github.com/Nick19861111/work/tree/main/pngquant 图片压缩。
+	- 下面是构建的比较完整的命令，参数官网都有说明
+	
+	你的cocos安装exe的路径 --path 你的工程路径 --build "platform=android;debug=true;template=link;"
+
