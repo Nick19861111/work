@@ -30,7 +30,7 @@
 
 吐槽一下网上很多的人每次都是截图，写顺序和命令从来不写版本，造成就算我们用的是同样的顺序和步骤但是也不能得到我们想要的结果，在protobufjs的打包上深有体会，希望这次整理对一些朋友可以节省时间。
 
-cocos creator 安卓构建
+### cocos creator 安卓构建
 
 - 首先要有ndk，和sdk的配置，这个网站上一搜一大把
 - 自动化的命令 我参考的是 2.4的版本 地址在 https://docs.cocos.com/creator/2.4/manual/zh/publish/publish-in-command-line.html
@@ -40,4 +40,6 @@ cocos creator 安卓构建
 	- 下面是构建的比较完整的命令，参数官网都有说明
 	
 	你的cocos安装exe的路径 --path 你的工程路径 --build "platform=android;debug=true;template=link;"
+
+- 构建完成：如果没出意外的话，你应该能看到构建成功的提示。然后到build/jsb-link/文件夹因为我是选择link方式构建，如果你不是请自行参照自己的构建的文件夹，然后在里面就可以看到两个重要的文件夹assets和src 英文上也很好理解一个是资源一个是代码的打包后面会利用这两个文件夹做文章。
 
