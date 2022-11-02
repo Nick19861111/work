@@ -73,4 +73,29 @@
 
 	rar a zong.zip 你要存放的路径 ::这里是使用的winrar这个软件，然后把你的winrar的exe路径放入到Path下面就可以使用，打包操作
 
- 
+### 使用ios进行打包
+
+思路：
+- 得到zong.zip文件,并且解压得到对应刚才所有的项目构建的 assets和src文件夹并且也进行了分类
+- 然后就是拷到mac上面进行操作
+- 使用shell对其操作
+
+1. 得到刚才所有换皮游戏的git项目下面的assets和src文件以后就可以利用shell对他们进行复制（注意：就是ccc下面的ios项目有时候覆盖不能打出最新的包，所以我在这边处理的时候都是先把ios构建的assets和src两个文件夹进行删除操作，然后在进行复制，这里我就不在去说命令了，可以自行百度
+
+代码如下
+
+	cd 到你所对应的ios构建的目录下
+	rm -rf 你要删除的文件夹
+	cp -rf 你复制的原地址 要复制的地址
+
+2.这一步操作完成以后就可以在ios的构建下面对其进行构建了
+
+	cd ../proj.ios_mac/" #进入目标项目中,我这里简略了项目地址
+	xcodebuild clean # 清理 对项目进行清理
+	xcodebuild -list # 查看 这一步很重要 你能看到你的对应项目的一些具体信息比如target 什么的
+	xcodebuild -archivePath "你编译以后的文件存放地址.xcarchive" -sdk iphoneos -target 你的项目名 -scheme 项目名字 -configuration "Release" archive 如果出现Archive succeeded 就说明你成功
+	xcodebuild -exportArchive -archivePath 你编译以后的文件存放地址.xcarchive -exportPath .存放.ipa的位置 -exportOptionsPlist "./buile/ExportOptions.plist"
+
+这里最后一个./buile/ExportOptions.plist 这个是需要配置一些信息的plist可以自行百度。
+
+以上就是我从ccc构建到ios打包的思路，希望能够帮到你，如果有帮助到你，请给一个星，谢谢。
