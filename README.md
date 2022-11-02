@@ -1,3 +1,11 @@
-# 工作中的需求
+# ios命令行打包
 
-[pngquant 图片压缩](https://github.com/Nick19861111/work/tree/main/pngquant)
+## 工作需求
+
+- 很多的换皮项目需要打包 这里最少25个
+- 流程化的打包顺序所以需要使用bat或者shell进行批量的构建打包方便进行多个进行打包的操作
+
+## 工作流程的整理与整理
+
+1. cocos creator 打包安卓
+2. 复制安卓构建下面的aesset和res文件到苹果电脑上原生打包的地方 
