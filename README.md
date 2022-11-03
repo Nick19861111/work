@@ -4,4 +4,4 @@
 
 [ios命令行打包](https://github.com/Nick19861111/work/tree/main/ios)
 
-打包的优化
+[打包的优化](https://github.com/Nick19861111/work/tree/main/OptimizedPackaging)
