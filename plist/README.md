@@ -1,22 +1,16 @@
-# 7.zip的使用
+# plist文件的读取和修改
 
-## 为什么要使用7.zip
+## 为什么要使用nodejs去读取plist
 
-我以前用命令行打包是用的传统的winrar 然后用命令行打包一个文件，但是发现一个问题就是如果这个打包的文件发送到的mac上就不能很少的进行解压，必须要安装第三方的解压工具才能解压比较麻烦，于是就想到了7.zip看能不能一个压缩，两个平台都可以使用。
 
-首先我直接用windos的传统方式直接压缩一个文件把传到mac上，在mac上可以直接解压无需安装第三方软件于是我就直接找对应的命令可以打包，发现和winrar命令类似，使用方式也一样。
 
 
 ## 基础使用
 
-1. 去官当下载
-2. 把安装地址加载到windows的环境变量中可以让7.zip的命令在哪里都可以执行。
-3. 使用dos 运行7z 看能不能出现命令行的提示如果有就证明成功。
-4. 7z a zong.zip .\zong 写一个测试的打包成zip，成功了。
 
 
 ## 参考文献
 
-具体使用命令：https://blog.csdn.net/WPwalter/article/details/90638622
+基础使用：https://blog.csdn.net/KimBing/article/details/122591722
 
-官网：https://www.7-zip.org/
+写入文件：https://www.cainiaojc.com/nodejs/nodejs-write-to-file.html
