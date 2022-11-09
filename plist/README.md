@@ -27,10 +27,10 @@
     const fs = require("fs")//读取io
 	const plist = require("plist");//load一个plist
 	
-	const list = ["f36577", "db36589"] //用户文件操作
-	const listTitle = ["f365", "db365"];
-	const listBunldId = ["com.f365.hoc", "com.db365.hoc"]
-	const url = "https://bibo-test-hk.oss-accelerate.aliyuncs.com/"
+	const list = ["1", "2"] //用户文件操作
+	const listTitle = ["1", "2"];
+	const listBunldId = ["com.1.hoc", "com.2.hoc"]
+	const url = "https://你的地址"
 	
 	for (let i = 0; i < list.length; i++) {
 	    let fileContext = fs.readFileSync("./" + list[i] + ".plist", 'utf-8');
