@@ -7,3 +7,5 @@
 [打包的优化](https://github.com/Nick19861111/work/tree/main/OptimizedPackaging)
 
 [7.zip的使用](https://github.com/Nick19861111/work/tree/main/7.zip)
+
+[plist文件修改](https://github.com/Nick19861111/work/tree/main/plist)
