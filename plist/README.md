@@ -22,6 +22,8 @@
 2. 使用npm install plist 进行安装
 3. 使用核心的两个方法对其进行操作，demo代码如下
 
+### 代码
+
     const fs = require("fs")//读取io
 	const plist = require("plist");//load一个plist
 	
