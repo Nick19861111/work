@@ -20,7 +20,7 @@ demo
 
 下面是结合dos命令对图片的操作
 
-	cd D:\test\tiyu\assets\resources
+	cd 你要进入的目录
 
 	for /R %%s in (.) do (
 	  cd %%s
