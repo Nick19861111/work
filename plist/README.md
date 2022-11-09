@@ -22,8 +22,7 @@
 2. 使用npm install plist 进行安装
 3. 使用核心的两个方法对其进行操作，demo代码如下
 
-
-	const fs = require("fs")//读取io
+    const fs = require("fs")//读取io
 	const plist = require("plist");//load一个plist
 	
 	const list = ["f36577", "db36589"] //用户文件操作
@@ -43,6 +42,7 @@
 	        console.log("Data is written to file successfully.")
 	    })
 	}
+
 
 关键的代码就是**plist.parse**和**plist.build**
 
