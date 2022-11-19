@@ -11,3 +11,5 @@
 [plist文件修改](https://github.com/Nick19861111/work/tree/main/plist)
 
 [nodejslog日志](https://github.com/Nick19861111/work/tree/main/Bunyan)
+
+[工作中遇到问题的总结](https://github.com/Nick19861111/work/tree/main/error)
