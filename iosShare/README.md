@@ -12,7 +12,7 @@
 新建buileIOS.bat文件
 
 	set url=%cd% 设置当前文件夹
-	set neturl=\\172.16.102.54\test1 设置共享文件夹地址
+	set neturl= 设置共享文件夹地址
 	//删除ccc编译的文件夹防止没有覆盖到
 	rd /s /q %url%\build\jsb-link\assets
 	rd /s /q %url%\build\jsb-link\src
