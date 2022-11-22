@@ -33,4 +33,9 @@ remove.sh文件
 	rm /f /r .\assets
 	rm /f /r .\src
 
+Construct.bat
+	
+	..\CocosCreator.exe --path 项目地址 --build "platform=android;debug=true;template=link;apiLevel=你使用的版本;packageName=项目名;title=文件名"
+	
+
 做好了以上的工作，我们只需要打开mac 对应的目录下的ios项目进行打包就可以。
