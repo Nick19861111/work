@@ -15,3 +15,5 @@
 [工作中遇到问题的总结](https://github.com/Nick19861111/work/tree/main/error)
 
 [mac共享文件给windows，一键打包](https://github.com/Nick19861111/work/tree/main/iosShare)
+
+mysql数据转换redis
