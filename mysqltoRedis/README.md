@@ -61,7 +61,7 @@ client.get("namess",(error, fooValue)=>{
 });
 ```
 
-合在一起
+合在一起,使用用户的id作为key，然后使用HMSET哈希来存储数据
 
 ```js
 var mysql = require('mysql');
@@ -88,3 +88,10 @@ connection.query('select * from userinfo',  (error, results, fields)=>{
 });
 ```
 
+最后在起一个reids的客户端
+
+```
+ hmget 1 password
+```
+
+看到对应的结果就证明操作成功。
